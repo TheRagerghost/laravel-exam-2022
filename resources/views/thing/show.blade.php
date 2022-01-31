@@ -11,6 +11,8 @@
     <div style="margin-bottom: 20px;margin-top: 20px;">
         <button type="button" class="btn btn-secondary" onclick="window.location.href = '{{route('main')}}';">Назад</button>
     </div>
+
+    @if ($thing->master_id == Auth::user()->id)
     <div style="margin-bottom: 20px;margin-top: 20px;">
         <form action="{{route('things.destroy',$thing->id)}}" method="post">
             @csrf
@@ -20,5 +22,6 @@
     <div>
         <button type="button" class="btn btn-primary" onclick="window.location.href = '{{route('things.edit',$thing->id)}}';">Редактировать пост</button>
     </div>
+    @endif
 
 @endsection

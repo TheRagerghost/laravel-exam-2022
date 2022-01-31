@@ -15,6 +15,7 @@
             @method('delete')
             <input type="submit" class="btn btn-danger" value="Удалить">
         </form></div>
+
     <div>
         <button type="button" class="btn btn-primary" onclick="window.location.href = '{{route('mythings.edit',$thing->id)}}';">Передать вещь</button>
     </div>

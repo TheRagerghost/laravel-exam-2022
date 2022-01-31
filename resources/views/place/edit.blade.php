@@ -5,11 +5,11 @@
         @csrf
         @method('patch')
         <div class="form-group">
-            <label for="name">Title</label>
+            <label for="name">Название</label>
             <input name="name" type="text" class="form-control" id="name" placeholder="name" value="{{$place->name}}">
         </div>
         <div class="form-group">
-            <label for="content">Content</label>
+            <label for="content">Описание</label>
             <textarea name="description" class="form-control" id="description"
                       placeholder="Content">{{$place->description}}</textarea>
         </div>
@@ -18,7 +18,7 @@
                 <input class="form-check-input" type="checkbox" value="1"
                        id="flexCheckDefault1" name="is_repair" checked>
                 <label class="form-check-label" for="flexCheckDefault1">
-                    Is a special place? repair ex.
+                    Специальное место
                 </label>
             </div>
         @else
@@ -26,7 +26,7 @@
                 <input class="form-check-input" type="checkbox" value="1"
                        id="flexCheckDefault1" name="is_repair">
                 <label class="form-check-label" for="flexCheckDefault1">
-                    Is a special place? repair ex.
+                    Специальное место
                 </label>
             </div>
         @endif
@@ -35,7 +35,7 @@
                 <input class="form-check-input" type="checkbox" value="1"
                        id="flexCheckDefault2" name="is_working" checked>
                 <label class="form-check-label" for="flexCheckDefault2">
-                    Are actually in work?
+                    Находится в работе
                 </label>
             </div>
         @else
@@ -43,7 +43,7 @@
                 <input class="form-check-input" type="checkbox" value="1"
                        id="flexCheckDefault2" name="is_working" checked>
                 <label class="form-check-label" for="flexCheckDefault2">
-                    Are actually in work?
+                    Находится в работе
                 </label>
             </div>
         @endif
@@ -69,6 +69,6 @@
         {{--                </label>--}}
         {{--            </div>--}}
         {{--        @endforeach--}}
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary">Обновить</button>
     </form>
 @endsection
